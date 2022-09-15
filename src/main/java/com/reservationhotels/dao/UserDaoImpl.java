@@ -2,12 +2,13 @@ package com.reservationhotels.dao;
 
 import javax.persistence.EntityManager;
 
+import com.reservationhotels.entity.User;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import henry.hotel.entity.User;
+import com.reservationhotels.entity.User;
 
 @Repository
 public class UserDaoImpl implements UserDao {

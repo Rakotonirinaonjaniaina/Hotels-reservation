@@ -1,6 +1,6 @@
 package com.reservationhotels.dao;
 
-import henry.hotel.entity.User;
+import com.reservationhotels.entity.User;
 
 //DAO Pattern for User
 public interface UserDao {

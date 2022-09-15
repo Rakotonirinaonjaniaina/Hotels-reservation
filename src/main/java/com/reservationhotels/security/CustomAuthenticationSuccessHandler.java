@@ -28,15 +28,16 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
 
 		String email = authentication.getName();
 		User user = userService.findUserByEmail(email);
-		
-		// now place in the session
+
 		HttpSession session = request.getSession();
 		session.setAttribute("user", user);
-		
-		// forward to home page
-		
+
 		response.sendRedirect(request.getContextPath() + "/");
 	}
 
 
+	@Override
+	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, org.springframework.security.core.Authentication authentication) throws IOException, ServletException {
+
+	}
 }

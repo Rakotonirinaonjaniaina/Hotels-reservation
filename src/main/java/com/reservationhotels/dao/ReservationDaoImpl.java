@@ -9,7 +9,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import henry.hotel.entity.Reservation;
+import com.reservationhotels.entity.Reservation;
 
 @Repository
 public class ReservationDaoImpl implements ReservationDao {

@@ -6,8 +6,8 @@ import javax.validation.constraints.Size;
 import com.reservationhotels.validation.FieldMatch;
 import com.reservationhotels.validation.ValidEmail;
 import com.sun.istack.NotNull;
-import henry.hotel.validation.FieldMatch;
-import henry.hotel.validation.ValidEmail;
+import com.reservationhotels.validation.FieldMatch;
+import com.reservationhotels.validation.ValidEmail;
 
 // field match annotation for passwords
 @FieldMatch.List({

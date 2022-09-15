@@ -62,7 +62,7 @@ public class HotelReservationController<AnonymousAuthenticationToken> {
 	@GetMapping("/login-form-page")
 	public String loginPage(Model model) {
 
-		LayoutBase<Object> SecurityContextHolder;
+		LayoutBase<Object> SecurityContextHolder = null;
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!(auth instanceof AnonymousAuthenticationToken)) {
 			return "redirect:/";

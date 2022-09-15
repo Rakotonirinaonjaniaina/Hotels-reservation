@@ -2,12 +2,13 @@ package com.reservationhotels.dao;
 
 import javax.persistence.EntityManager;
 
+import com.reservationhotels.entity.Role;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import henry.hotel.entity.Role;
+import com.reservationhotels.entity.Role;
 
 @Repository
 public class RoleDaoImpl implements RoleDao {
